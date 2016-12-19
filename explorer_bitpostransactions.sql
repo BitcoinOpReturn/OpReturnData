@@ -1,0 +1,52 @@
+-- MySQL dump 10.13  Distrib 5.7.12, for Win64 (x86_64)
+--
+-- Host: localhost    Database: explorer
+-- ------------------------------------------------------
+-- Server version	5.7.16-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `bitpostransactions`
+--
+
+DROP TABLE IF EXISTS `bitpostransactions`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `bitpostransactions` (
+  `transactionHash` varchar(64) COLLATE utf8_unicode_ci NOT NULL,
+  `opreturn` varchar(160) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `block` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  PRIMARY KEY (`transactionHash`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `bitpostransactions`
+--
+
+LOCK TABLES `bitpostransactions` WRITE;
+/*!40000 ALTER TABLE `bitpostransactions` DISABLE KEYS */;
+INSERT INTO `bitpostransactions` VALUES ('67e7870c4250b69543c5cbf95346e401f213d4634d3a617b0b7d5b42a6bc3cc8','42494431343735313332303534','0000000000000000048b75fa657cede605d375f96af4180c070d91c11569cca4'),('789b526403d4f8d0e305d69a8ea76afe323f1cface1484c7b3159c95d10e8cca','42494431343735313330383436','000000000000000002abe9b8f87d22b3b880d814cbd34808d6c3f8e6bb6580d6'),('ff71f74a8c58e276afed64efbbd2c8886352f1a2b27398185d4eca8b21a97c3a','42494431343735313332303231','0000000000000000048b75fa657cede605d375f96af4180c070d91c11569cca4');
+/*!40000 ALTER TABLE `bitpostransactions` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-12-14 14:09:59
